@@ -17,7 +17,7 @@ defmodule PhoenixLiveSensorsWeb.Router do
   scope "/", PhoenixLiveSensorsWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", LiveSensors
   end
 
   # Other scopes may use custom stacks.

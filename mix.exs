@@ -19,7 +19,7 @@ defmodule PhoenixLiveSensors.MixProject do
   def application do
     [
       mod: {PhoenixLiveSensors.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :amqp, :jason]
     ]
   end
 
@@ -54,7 +54,8 @@ defmodule PhoenixLiveSensors.MixProject do
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
-      {:bandit, "~> 1.2"}
+      {:bandit, "~> 1.2"},
+      {:amqp, "~> 3.3"}
     ]
   end
 

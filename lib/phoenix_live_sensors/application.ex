@@ -16,7 +16,8 @@ defmodule PhoenixLiveSensors.Application do
       # Start a worker by calling: PhoenixLiveSensors.Worker.start_link(arg)
       # {PhoenixLiveSensors.Worker, arg},
       # Start to serve requests, typically the last entry
-      PhoenixLiveSensorsWeb.Endpoint
+      PhoenixLiveSensorsWeb.Endpoint,
+      ReadSensors
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
