@@ -1,9 +1,9 @@
 <div class="container mx-auto flex flex-col items-center justify-center h-screen">
     <div>
-      <h1 class="text-4xl mb-4">LiveView</h1>
+      <h1 class="text-4xl mb-4 text-center ">Macbook Sensors</h1>
       <div class="flex justify-between w-full">
-        <p class="text-xl">CPU Power: <%= @cpu_status %></p>
-        <p class="text-xl">GPU Power: <%= @gpu_status %></p>
+        <p class="text-xl font-bold">CPU mW:</p><p class={"text-xl ordinal slashed-zero " <> @cpu_color}><%= @cpu_status %></p>
+        <p class="text-xl font-bold">GPU mW:</p><p class={"text-xl ordinal slashed-zero " <> @gpu_color}><%= @gpu_status %></p>
       </div>
     </div>
 </div>
