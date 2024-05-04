@@ -1,7 +1,9 @@
-<div class="container">
+<div class="container mx-auto flex flex-col items-center justify-center h-screen">
     <div>
-      <h1>LiveView</h1>
-      <p>CPU Power: <%= @cpu_status %></p>
-      <p>GPU Power: <%= @gpu_status %></p>
+      <h1 class="text-4xl mb-4">LiveView</h1>
+      <div class="flex justify-between w-full">
+        <p class="text-xl">CPU Power: <%= @cpu_status %></p>
+        <p class="text-xl">GPU Power: <%= @gpu_status %></p>
+      </div>
     </div>
 </div>
