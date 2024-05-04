@@ -1,5 +1,8 @@
 # PhoenixLiveSensors
 
+<div align="left">
+    <img src="./gif/mac_sensors.mp4.gif" alt="GIF" style="max-width:800px;">
+</div>
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
