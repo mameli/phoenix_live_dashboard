@@ -20,15 +20,4 @@ defmodule PhoenixLiveSensorsWeb.LiveSensors do
         {:noreply, socket}
     end
   end
-
-  # Render function to display messages in the LiveView
-  def render(assigns) do
-    ~L"""
-    <div>
-      <h1>LiveView</h1>
-      <p>CPU Power: <%= @cpu_status %></p>
-      <p>GPU Power: <%= @gpu_status %></p>
-    </div>
-    """
-  end
 end
