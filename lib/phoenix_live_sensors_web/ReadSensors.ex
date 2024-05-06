@@ -33,7 +33,7 @@ defmodule ReadSensors do
   end
 
   def handle_info({:basic_deliver, payload, _meta}, state) do
-    PhoenixLiveSensorsWeb.Endpoint.broadcast("topic", "new_message", %{message: payload})
+    PhoenixLiveSensorsWeb.Endpoint.broadcast("sensor_topic", "new_message", %{message: payload})
     {:noreply, state}
   end
 

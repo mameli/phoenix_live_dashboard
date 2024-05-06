@@ -2,7 +2,7 @@ defmodule PhoenixLiveSensorsWeb.LiveSensors do
   use PhoenixLiveSensorsWeb, :live_view
 
   def mount(_params, _session, socket) do
-    PhoenixLiveSensorsWeb.Endpoint.subscribe("topic")
+    PhoenixLiveSensorsWeb.Endpoint.subscribe("sensor_topic")
     {:ok, assign(socket, cpu_status: 0, gpu_status: 0, cpu_color: "text-green-500", gpu_color: "text-green-500")}
   end
 
